@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import Feed from "./Feed";
+import MainFeed from "./MainFeed";
 import "../styles/MainContainer.css";
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <NavBar />
       <div className="main">
         <div></div>
-        <Feed />
+        <MainFeed />
         <div></div>
       </div>
     </>
