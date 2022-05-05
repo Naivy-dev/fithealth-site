@@ -12,6 +12,8 @@
     "react-bootstrap": "^2.2.3",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
+    "react-text-format": "^2.0.28",
+    "read-more-react": "^1.0.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
