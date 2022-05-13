@@ -27,7 +27,7 @@
 .infoDivider > *:nth-child(3) {
   flex: 1 1 0;
 }
-#contentImg {
+#profileImg {
   display: block;
   max-height: 200px;
   max-width: 200px;
