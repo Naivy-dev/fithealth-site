@@ -35,7 +35,7 @@ const postsInfos = [
 export default function Post() {
   return postsInfos.map((post, id) => {
     return (
-      <Card style={{ width: "40rem", textAlign: "left" }}>
+      <Card style={{ width: "40rem", textAlign: "left", overflow: "hidden" }}>
         <div className="image-background">
           <div className="image-container">
             <Card.Img id="contentImg" variant="top" src={post.imgSrc} />

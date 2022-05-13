@@ -1,13 +1,13 @@
 import React from "react";
 import profilePic from "../images/default pfp.png";
-import logo from "../images/logo192.png";
+import logo from "../images/logobrabaSemFundo.png";
 import { Navbar, NavDropdown, Image } from "react-bootstrap";
 
 export default function NavBar() {
   return (
-    <Navbar bg="light" style={{ paddingLeft: "40px", paddingRight: "40px" }}>
+    <Navbar bg="light" style={{ paddingLeft: "40px", paddingRight: "100px" }}>
       <Navbar.Brand href="#home">
-        <Image src={logo} height="40px" width="40px"></Image>
+        <Image src={logo} height="100%" width="100px"></Image>
       </Navbar.Brand>
 
       <NavDropdown id="navbarScrollingDropdown" className="ms-auto">
