@@ -4,7 +4,7 @@ import { Widget, addResponseMessage  } from 'react-chat-widget';
 
 import 'react-chat-widget/lib/styles.css';
 
-import logo from './logo.jpeg';
+import logo from '../images/logobraba.jpg';
 
 
 export default function Chat() {
@@ -18,7 +18,6 @@ export default function Chat() {
     };
 
     return (
-        <>
             <div className="App">
                 <Widget         
                     handleNewUserMessage={handleNewUserMessage}
@@ -27,6 +26,5 @@ export default function Chat() {
                     subtitle="And my cool subtitle"
                 />
             </div>
-        </>
     );
   }
