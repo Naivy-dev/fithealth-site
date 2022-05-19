@@ -39,10 +39,14 @@
   padding: 20px;
   min-width: 300px;
   text-align: right;
+  font-weight: bold;
 }
 .profileDesc {
   padding: 20px;
   text-align: justify;
   min-height: 350px;
   white-space: pre-line;
+  background-color: #e3fff6;
+  margin: 10px;
+  border-radius: 10px;
 }

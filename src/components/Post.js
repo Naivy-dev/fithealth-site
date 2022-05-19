@@ -157,7 +157,7 @@ export default function Post(props) {
                 </div>
               </div>
 
-              <Card.Body>
+              <Card.Body className="postCard">
                 <Card.Title>{post.title}</Card.Title>
                 <ListGroup>
                   <ReadMoreReact

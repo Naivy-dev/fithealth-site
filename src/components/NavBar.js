@@ -16,8 +16,11 @@ export default function NavBar(props) {
   return (
     <Navbar
       sticky="top"
-      bg="light"
-      style={{ paddingLeft: "40px", paddingRight: "100px" }}
+      style={{
+        paddingLeft: "40px",
+        paddingRight: "100px",
+        backgroundColor: "#f7fffc",
+      }}
     >
       <Navbar.Brand onClick={goToFeed}>
         <Image src={logo} height="100%" width="100px"></Image>
