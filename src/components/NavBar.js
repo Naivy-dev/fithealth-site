@@ -14,7 +14,11 @@ export default function NavBar(props) {
   };
 
   return (
-    <Navbar bg="light" style={{ paddingLeft: "40px", paddingRight: "100px" }}>
+    <Navbar
+      sticky="top"
+      bg="light"
+      style={{ paddingLeft: "40px", paddingRight: "100px" }}
+    >
       <Navbar.Brand onClick={goToFeed}>
         <Image src={logo} height="100%" width="100px"></Image>
       </Navbar.Brand>
