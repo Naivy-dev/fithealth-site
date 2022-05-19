@@ -10,6 +10,7 @@
     "express": "^4.17.3",
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.3",
+    "react-chat-window": "^1.2.1",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
     "react-text-format": "^2.0.28",
