@@ -1,0 +1,63 @@
+.mainContainer {
+  align-items: center;
+  position: relative;
+  background: #f7fffd;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 30px 30px 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-content: flex-start;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #e0fff4;
+  padding: 0 30px 0 30px;
+}
+.postCard {
+  background-color: #e3fff6;
+}
+.main > *:nth-child(1) {
+  flex: 1 1 0;
+}
+.main > *:nth-child(2) {
+  flex: 2 1 0;
+}
+.main > *:nth-child(3) {
+  flex: 1 1 0;
+}
+.displayed-text {
+  white-space: pre-line;
+}
+.image-background {
+  background: #000;
+  display: table;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.image-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  max-height: 500px;
+  max-width: 100%;
+}
+
+#contentImg {
+  display: block;
+  max-height: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.modal-content {
+  height: 900px;
+  box-shadow: 0 0 100px;
+}

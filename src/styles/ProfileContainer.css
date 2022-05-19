@@ -1,0 +1,52 @@
+.image-background {
+  background: #000;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+.infoDivider {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoDivider > *:nth-child(1) {
+  flex: 1 1 0;
+}
+.infoDivider > *:nth-child(2) {
+  flex: 0.5 1 0;
+}
+.infoDivider > *:nth-child(3) {
+  flex: 1 1 0;
+}
+#profileImg {
+  display: block;
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  border-radius: 100%;
+  padding: 10px;
+}
+.profileInfo {
+  padding: 20px;
+  min-width: 300px;
+  text-align: right;
+  font-weight: bold;
+}
+.profileDesc {
+  padding: 20px;
+  text-align: justify;
+  min-height: 350px;
+  white-space: pre-line;
+  background-color: #e3fff6;
+  margin: 10px;
+  border-radius: 10px;
+}
