@@ -42,7 +42,7 @@
 }
 .profileDesc {
   padding: 20px;
-  text-align: left;
+  text-align: justify;
   min-height: 350px;
   white-space: pre-line;
 }

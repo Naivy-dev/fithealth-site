@@ -3,18 +3,27 @@ import profilePic from "../images/default pfp.png";
 import logo from "../images/logobrabaSemFundo.png";
 import { Navbar, NavDropdown, Image } from "react-bootstrap";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const goToProfile = (e) => {
+    e.preventDefault();
+    props.setMode("profile");
+  };
+  const goToFeed = (e) => {
+    e.preventDefault();
+    props.setMode("feed");
+  };
+
   return (
     <Navbar bg="light" style={{ paddingLeft: "40px", paddingRight: "100px" }}>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand onClick={goToFeed}>
         <Image src={logo} height="100%" width="100px"></Image>
       </Navbar.Brand>
 
       <NavDropdown id="navbarScrollingDropdown" className="ms-auto">
-        <NavDropdown.Item href="#action3">Perfil</NavDropdown.Item>
-        <NavDropdown.Item href="#action4">Configurações</NavDropdown.Item>
+        <NavDropdown.Item onClick={goToProfile}>Perfil</NavDropdown.Item>
+        <NavDropdown.Item>Configurações</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action5">Logout</NavDropdown.Item>
+        <NavDropdown.Item>Logout</NavDropdown.Item>
       </NavDropdown>
       <Image src={profilePic} height="40px" width="40px" rounded="y"></Image>
     </Navbar>

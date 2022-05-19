@@ -7,16 +7,16 @@ Meu objetivo é ser um nutricionista de alta qualidade disposto a oferecer o mel
 export default function ProfileContainer() {
   return (
     <Card style={{ maxWidth: "700px", border: "0", boxShadow: "0px 3px 10px" }}>
-      <div className={"infoDivider"}>
+      <div className="infoDivider">
         <div className="pfp-background">
           <div className="pfp-container">
-            <Card.Img id="contentImg" src={pfp} />
+            <Card.Img id="profileImg" src={pfp} />
           </div>
         </div>
         <div></div>
         <div className="profileInfo">
           <p></p>
-          <p>Gabriel Soares</p>
+          <p>João</p>
           <p>18 Anos</p>
           <p>Estudante de Nutrição</p>
         </div>

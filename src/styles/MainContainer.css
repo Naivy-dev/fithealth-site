@@ -52,3 +52,7 @@
   max-width: 500px;
   margin: auto;
 }
+
+.modal-content {
+  height: 900px;
+}
