@@ -35,3 +35,39 @@
   border-radius: 10px;
   box-shadow: 0 0 100px;
 }
+
+.postCard--footer{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.postCard--footer .more,
+.icons-wrapper 
+{
+  flex: 1 1 0;
+}
+
+.icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postCard--icons p{
+  margin: 0 10px;
+}
+
+.postCard--icons {
+  display: flex;
+  align-items: center;
+  color: #6f7574;
+  cursor: pointer;
+}
+
+.postCard--icons:hover{
+  color: #21DEBE;
+}
+
+.more:hover{
+  text-decoration: underline;
+}
