@@ -160,13 +160,7 @@ export default function Post(props) {
               <Card.Body className="postCard">
                 <Card.Title>{post.title}</Card.Title>
                 <ListGroup>
-                  <ReadMoreReact
-                    min={100}
-                    ideal={200}
-                    max={400}
-                    text={post.content}
-                    readMoreText="Ler mais"
-                  />
+                  <p className="content">{post.content}</p>
                 </ListGroup>
               </Card.Body>
             </Card>
