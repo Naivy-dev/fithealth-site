@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Card, ListGroup, Modal } from "react-bootstrap";
-import ReadMoreReact from "read-more-react";
 //#region Posts
 const postsInfos = [
   {
@@ -160,13 +159,7 @@ export default function Post(props) {
               <Card.Body className="postCard">
                 <Card.Title>{post.title}</Card.Title>
                 <ListGroup>
-                  <ReadMoreReact
-                    min={100}
-                    ideal={200}
-                    max={400}
-                    text={post.content}
-                    readMoreText="Ler mais"
-                  />
+                  <p className="content">{post.content}</p>
                 </ListGroup>
               </Card.Body>
             </Card>

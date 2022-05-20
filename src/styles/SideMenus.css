@@ -1,0 +1,72 @@
+.menuIcon {
+  font-size: 30px;
+  margin-left: 10px;
+}
+.menuItem {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.menuItem:hover {
+  transition: background-color 100ms;
+  background-color: #ddf4f1;
+}
+.menuItem p {
+  text-align: left;
+  margin: 0;
+}
+.postButton:hover {
+  transition: background-color color 100ms !important;
+  background-color: #c7fff6 !important;
+  color: #6f7574 !important;
+}
+.titles {
+  padding-left: 5px;
+  font-size: 24px;
+}
+.more {
+  padding-left: 5px;
+  font-size: 18px;
+  color: #21debe;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-weight: bold;
+  width: fit-content;
+}
+.likes {
+  color: #6f7574;
+  font-size: 12px;
+}
+.rightMenuItem {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+.rightMenuItem:hover {
+  background-color: #ddf4f1;
+}
+.rightMenuItems {
+  color: black;
+}
+.rightMenuItems p {
+  margin: 0;
+}
+.whoToFollow {
+  text-align: left;
+  font-size: 20px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.whoToFollowIcons {
+  height: 40px;
+  border-radius: 100%;
+}
+.whoToFollow p {
+  margin: 0;
+}
