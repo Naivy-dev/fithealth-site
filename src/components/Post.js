@@ -162,6 +162,31 @@ export default function Post(props) {
                 <ListGroup>
                   <p className="content">{post.content}</p>
                 </ListGroup>
+                <div className="postCard--footer">
+                  <button className="more" onClick={() => handleShow(id)}>
+                    Ler mais
+                  </button>
+                  <div className="icons-wrapper">
+                    <div className="postCard--icons">
+                      <span class="material-symbols-outlined">
+                        comment
+                      </span>
+                      <p>100K</p>
+                    </div>
+                    <div className="postCard--icons">
+                      <span class="material-symbols-outlined">
+                        thumb_up
+                      </span>
+                      <p>100K</p>
+                    </div>
+                    <div className="postCard--icons">
+                      <span class="material-symbols-outlined">
+                        screen_share
+                      </span>
+                      <p>100K</p>
+                    </div>
+                  </div>
+                </div>
               </Card.Body>
             </Card>
           </div>
