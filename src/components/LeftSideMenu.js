@@ -79,10 +79,10 @@ export default function LeftSideMenu(props) {
             <p>Início</p>
           </div>
           <div className="menuItem">
-            <span className="material-symbols-outlined menuIcon">
-              more_horiz
-            </span>
-            <p>Opções</p>
+          <span class="material-symbols-outlined menuIcon">
+            emoji_objects
+          </span>
+            <p>Sugestões</p>
           </div>
         </Card>
         <Button
