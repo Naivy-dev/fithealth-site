@@ -70,3 +70,50 @@
 .whoToFollow p {
   margin: 0;
 }
+.writeModal {
+  height: 100%;
+  border-radius: 10px;
+}
+.titleText {
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d6e4e2;
+  margin: 0;
+  width: 100%;
+  height: 44px;
+}
+.titleText:placeholder-shown {
+  font-weight: bold;
+}
+.contentText {
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d6e4e2;
+  margin: 0;
+  resize: none;
+  width: 100%;
+  margin-top: 24px;
+  height: 341px;
+}
+.contentText:placeholder-shown {
+  font-weight: bold;
+}
+.sendButton:hover {
+  transition: background-color color 100ms !important;
+  background-color: #c7fff6 !important;
+  color: #6f7574 !important;
+}
+.writePostIcons {
+  font-size: 50px;
+  margin-top: 15px;
+  opacity: 70%;
+}
+.writePostIcons:hover {
+  cursor: pointer;
+  transition: opacity 100ms;
+  opacity: 90%;
+}
