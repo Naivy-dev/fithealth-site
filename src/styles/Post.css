@@ -1,6 +1,13 @@
 .postCard {
   background-color: #f7fffc;
+  padding: 2.5rem;
 }
+
+.postTitle{
+  font-weight: bold;
+  color: #6f7574;
+}
+
 .content {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12,25 +19,15 @@
 }
 .image-background {
   background: #000;
-  display: table;
   width: 100%;
-  height: 500px;
-  position: relative;
+
 }
 .image-container {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  margin: auto;
-  max-height: 500px;
-  max-width: 100%;
+  overflow: hidden;
 }
 
-#contentImg {
-  display: block;
-  max-height: 100%;
-  max-width: 500px;
-  margin: auto;
+#contentImg { 
+  width: 100%;
 }
 
 .modal-content {

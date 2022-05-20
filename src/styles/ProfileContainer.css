@@ -1,3 +1,7 @@
+.profileCard {
+  padding: 5rem;
+}
+
 .image-background {
   background: #000;
   display: table;
@@ -19,13 +23,10 @@
   flex-wrap: wrap;
 }
 .infoDivider > *:nth-child(1) {
-  flex: 1 1 0;
+  flex: 1.25 1 0;
 }
 .infoDivider > *:nth-child(2) {
-  flex: 0.5 1 0;
-}
-.infoDivider > *:nth-child(3) {
-  flex: 1 1 0;
+  flex: 1.75 1 0;
 }
 #profileImg {
   display: block;
@@ -40,13 +41,48 @@
   min-width: 300px;
   text-align: right;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.profileInfo h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.profileInfo p {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6f7574;
+}
+
 .profileDesc {
   padding: 20px;
+  padding-top: 40px;
   text-align: justify;
-  min-height: 350px;
   white-space: pre-line;
-  background-color: #e3fff6;
-  margin: 10px;
-  border-radius: 10px;
+}
+
+.profileOptions {
+  display: flex;
+  justify-content: center;
+}
+
+.profileOptions h2 {
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #6f7574;
+}
+
+.optionsText {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.optionsText:hover{
+  background-color: #DDF4F1;
 }

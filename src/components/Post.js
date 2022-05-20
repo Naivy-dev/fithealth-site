@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, ListGroup, Modal } from "react-bootstrap";
 //#region Posts
 const postsInfos = [
@@ -97,6 +97,7 @@ export default function Post(props) {
     setPost(id);
   };
 
+  
   return (
     <>
       <Modal
@@ -134,7 +135,8 @@ export default function Post(props) {
           </Modal.Body>
         </div>
       </Modal>
-      {postsInfos.map((post, id) => {
+      
+      {postsInfos.filter(post => props.IdArray.includes(post.id)).map((post, id) => {
         return (
           <div key={id}>
             <Card
@@ -142,7 +144,6 @@ export default function Post(props) {
                 width: "40rem",
                 textAlign: "justify",
                 overflow: "hidden",
-                maxHeight: "750px",
               }}
             >
               <div className="image-background">
@@ -157,7 +158,7 @@ export default function Post(props) {
               </div>
 
               <Card.Body className="postCard">
-                <Card.Title>{post.title}</Card.Title>
+                <Card.Title className="postTitle">{post.title}</Card.Title>
                 <ListGroup>
                   <p className="content">{post.content}</p>
                 </ListGroup>
@@ -165,7 +166,9 @@ export default function Post(props) {
             </Card>
           </div>
         );
-      })}
+      }
+      )
+      }
     </>
   );
 }
