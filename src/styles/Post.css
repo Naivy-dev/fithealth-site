@@ -39,7 +39,7 @@
 .postCard--footer{
   display: flex;
   justify-content: space-between;
-
+  margin-top: 1rem;
 }
 
 .postCard--footer .more,
@@ -70,4 +70,49 @@
 
 .more:hover{
   text-decoration: underline;
+}
+
+.modal-profile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+  overflow: hidden;
+}
+
+.profile-pic img{
+  width: 100%;
+  margin-bottom: 50%;
+  margin-top: 0;
+}
+
+.profile-name{
+  font-size: 24px;
+  font-weight: bold;
+  margin:0;
+}
+
+.profile-job {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #6F7574;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modal-title {
+  font-size: 26px;
+  color: #6F7574;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }

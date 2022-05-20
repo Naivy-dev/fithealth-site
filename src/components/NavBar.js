@@ -18,7 +18,7 @@ export default function NavBar(props) {
     <Navbar
       sticky="top"
       style={{
-        paddingLeft: "40px",
+        paddingLeft: "100px",
         paddingRight: "100px",
         backgroundColor: "#f7fffc",
         boxShadow: "0 -3px 10px",

@@ -16,6 +16,9 @@ const postsInfos = [
     •Sendo fundamental para o aquecimento e relaxamento dos músculos.
     •Pode ser praticado a qualquer hora do dia.
     •Benéficos: reduz tensão muscular, relaxa o corpo, previne lesões, prepara o corpo para atividades físicas, ativa a circulação.`,
+    pfName: 'Roque Marques',
+    pfp: 'https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687',
+    pfJob: 'Professor de Yoga',
   },
   {
     id: 2,
@@ -29,6 +32,9 @@ const postsInfos = [
     •Força 
     
     Podemos praticar uma caminhada ao ar livre, corrida, pular corda até andar de bicicleta por 15 minutos já melhora indicativos de saúde.`,
+    pfName: 'Camargo Pastore',
+    pfp: 'https://images.unsplash.com/photo-1454789548928-9efd52dc4031?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880',
+    pfJob: 'Fisiculturista',
   },
   {
     id: 3,
@@ -63,12 +69,15 @@ const postsInfos = [
   
   Fonte: https://fametro.edu.br/2021/02/04/vamos-falar-sobre-saude-mental-por-lisiane-thompson-flores/
   `,
+    pfName: 'Jorge Roberto',
+    pfp: 'https://images.unsplash.com/photo-1592393972911-ad0bc7e114e2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764',
+    pfJob: 'Psicólogo',
   },
   {
     id: 4,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/976673383062306856/unknown.png?width=817&height=460",
-    title: "COMO PODEMOS SUBSTITUIR O PÃO DO CAFÉ DA MANHÃ?",
+    title: "Como podemos substituir o pão do café da manhã?",
     content: `Hoje trouxemos uma mega receita para substituir o famoso pão do café da manhã e tornar a sua manhã mais saudável e gostosa.
     Abaixo está a receita de um belíssimo bolo de banana e aveia.
     Ingredientes
@@ -85,6 +94,9 @@ const postsInfos = [
     
     https://www.terra.com.br/vida-e-estilo/culinaria/receitas/saiba-como-substituir-pao-no-cafe-da-manha-com-receitas-incriveis,c0bbe771fe43245ed5e5ad47ef1359a98z09ubd0.html
     `,
+    pfName: 'João Brites',
+    pfp: 'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735',
+    pfJob: 'Estudante de Nutricionismo',
   },
 ];
 //#endregion
@@ -113,13 +125,48 @@ export default function Post(props) {
           <div className="image-container">
             <img
               className="contentImg"
-              style={{ maxWidth: "100%", height: "500px" }}
+              style={{ width: "100%" }}
               src={postsInfos[curPost].imgSrc}
               alt=""
             ></img>
           </div>
         </div>
-        <div style={{ padding: "20px", maxHeight: "100%", overflow: "hidden" }}>
+        <div style={{ padding: "3rem", maxHeight: "100%", overflow: "hidden" }}>
+          <div className="modal-profile">
+            <div style={{ display: "flex", gap: "1rem" }}>
+              <div className="profile-pic">
+                <img src={postsInfos[curPost].pfp} alt="Profile Picture" ></img>
+              </div>
+              <div className="profile-info">
+                <h2 className="profile-name">
+                  {postsInfos[curPost].pfName}
+                </h2>
+                <h3 className="profile-job">
+                  {postsInfos[curPost].pfJob}
+                </h3>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "end"}}>
+                    <div className="postCard--icons">
+                      <span class="material-symbols-outlined">
+                        comment
+                      </span>
+                      <p>100K</p>
+                    </div>
+                    <div className="postCard--icons">
+                      <span class="material-symbols-outlined">
+                        thumb_up
+                      </span>
+                      <p>100K</p>
+                    </div>
+                    <div className="postCard--icons">
+                      <span class="material-symbols-outlined">
+                        screen_share
+                      </span>
+                      <p>100K</p>
+                    </div>
+                  </div>
+          </div>
           <Modal.Title>{postsInfos[curPost].title}</Modal.Title>
           <Modal.Body
             style={{
@@ -127,6 +174,7 @@ export default function Post(props) {
               overflow: "auto",
               maxHeight: "90%",
               position: "relative",
+              padding: 0,
             }}
           >
             {postsInfos[curPost].content}
@@ -163,7 +211,11 @@ export default function Post(props) {
                   <p className="content">{post.content}</p>
                 </ListGroup>
                 <div className="postCard--footer">
-                  <button className="more" onClick={() => handleShow(id)}>
+                  <button 
+                    className="more" 
+                    onClick={() => handleShow(id)}
+                    style={{ margin: 0, padding: 0}}
+                  >
                     Ler mais
                   </button>
                   <div className="icons-wrapper">
