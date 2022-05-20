@@ -78,10 +78,13 @@ export default function LeftSideMenu(props) {
             <span className="material-symbols-outlined menuIcon">house</span>
             <p>Início</p>
           </div>
-          <div className="menuItem">
-          <span class="material-symbols-outlined menuIcon">
-            emoji_objects
-          </span>
+          <div
+            onClick={() => props.changeMode("suggested")}
+            className="menuItem"
+          >
+            <span class="material-symbols-outlined menuIcon">
+              emoji_objects
+            </span>
             <p>Sugestões</p>
           </div>
         </Card>

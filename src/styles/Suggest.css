@@ -1,0 +1,17 @@
+.suggestItem {
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+}
+.suggestItem:hover {
+  background-color: #ddf4f1;
+}
+.suggestTitles {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.suggestLike {
+  padding-left: 5px;
+  margin: 0;
+}
