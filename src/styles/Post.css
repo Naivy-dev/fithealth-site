@@ -1,0 +1,39 @@
+.postCard {
+  background-color: #f7fffc;
+}
+.content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 2;
+  white-space: pre-line;
+  -webkit-box-orient: vertical;
+}
+.image-background {
+  background: #000;
+  display: table;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.image-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  max-height: 500px;
+  max-width: 100%;
+}
+
+#contentImg {
+  display: block;
+  max-height: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.modal-content {
+  height: 900px;
+  box-shadow: 0 0 100px;
+}

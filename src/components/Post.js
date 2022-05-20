@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Card, ListGroup, Modal } from "react-bootstrap";
-import ReadMoreReact from "read-more-react";
 //#region Posts
 const postsInfos = [
   {

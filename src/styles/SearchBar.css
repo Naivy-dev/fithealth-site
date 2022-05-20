@@ -1,0 +1,45 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.searchTerm {
+  width: 100%;
+  border: none;
+  background-color: #d6e4e2;
+  border: 1px solid #d6e4e2;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px;
+  height: 36px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  color: #6f7574;
+}
+
+.searchTerm:focus {
+  color: #1f1f1f;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #d6e4e2;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  background-color: #d6e4e2;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

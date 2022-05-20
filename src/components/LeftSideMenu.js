@@ -47,7 +47,7 @@ export default function LeftSideMenu(props) {
             color: "#6F7574",
           }}
         >
-          <div className="menuItem">
+          <div onClick={() => props.changeMode("feed")} className="menuItem">
             <span className="material-symbols-outlined menuIcon">house</span>
             <p>Início</p>
           </div>
@@ -59,11 +59,14 @@ export default function LeftSideMenu(props) {
           </div>
         </Card>
         <Button
+          className="postButton"
           onClick={handleShow}
           style={{
             fontWeight: "bold",
+            border: 0,
+            borderRadius: 10,
             fontSize: 24,
-            marginTop: 30,
+            marginTop: 15,
             height: 60,
             width: "100%",
             backgroundColor: "#21DEBE",
