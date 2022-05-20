@@ -8,6 +8,7 @@ export default function LeftSideMenu(props) {
   return (
     <>
       <Modal
+        className="writeModal"
         show={show}
         onHide={handleClose}
         {...props}
@@ -15,17 +16,43 @@ export default function LeftSideMenu(props) {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton></Modal.Header>
-        <div style={{ padding: "20px", maxHeight: "100%", overflow: "hidden" }}>
-          <Modal.Title></Modal.Title>
-          <Modal.Body
-            style={{
-              whiteSpace: "pre-line",
-              overflow: "auto",
-              maxHeight: "90%",
-              position: "relative",
-            }}
-          ></Modal.Body>
+        <Modal.Header closeButton style={{ border: "none" }}></Modal.Header>
+        <div
+          style={{
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            paddingTop: "10px",
+            paddingBottom: "20px",
+          }}
+        >
+          <input placeholder="Título" className="titleText"></input>
+          <textarea placeholder="Descrição" className="contentText"></textarea>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div>
+              <span class="material-symbols-outlined writePostIcons">
+                image
+              </span>
+              <span class="material-symbols-outlined writePostIcons">
+                gif_box
+              </span>
+            </div>
+            <Button
+              className="sendButton"
+              style={{
+                fontWeight: "bold",
+                border: 0,
+                borderRadius: 10,
+                fontSize: 24,
+                marginTop: 15,
+                width: 180,
+                height: 60,
+                color: "",
+                backgroundColor: "#21DEBE",
+              }}
+            >
+              Enviar
+            </Button>
+          </div>
         </div>
       </Modal>
       <div style={{ position: "sticky", top: 100 }}>
