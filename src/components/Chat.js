@@ -33,6 +33,7 @@ export default class Chat extends Component {
     return (
       <div>
         <Launcher
+          className="chatBox"
           agentProfile={{
             teamName: "Feedback",
           }}

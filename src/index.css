@@ -16,3 +16,13 @@ code {
 .card {
   border-radius: 10px !important;
 }
+.sc-chat-window,
+.sc-launcher{
+  z-index: 999 !important;
+}
+
+.sc-launcher,
+.sc-header,
+.sc-message--text{
+  background-color: #21debe !important;
+}
