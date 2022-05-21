@@ -5,17 +5,16 @@ export default function RightSideMenu() {
     <div style={{ position: "sticky", top: 100 }}>
       <Card
         style={{
-          paddingTop: 30,
-          paddingBottom: 30,
+          padding: "30px",
           border: 0,
           borderRadius: "10px",
-          maxHeight: 450,
           fontWeight: "bold",
           gap: 30,
           color: "#6F7574",
           textAlign: "left",
           paddingLeft: "15px",
           paddingRight: "15px",
+          marginBottom: 20
         }}
       >
         <div className="titles">Em alta</div>
@@ -42,11 +41,9 @@ export default function RightSideMenu() {
       <Card
         style={{
           top: 10,
-          paddingTop: 30,
-          paddingBottom: 30,
+          padding: "30px",
           border: 0,
           borderRadius: "10px",
-          maxHeight: 300,
           fontWeight: "bold",
           color: "#6F7574",
           textAlign: "left",
@@ -54,18 +51,30 @@ export default function RightSideMenu() {
           paddingRight: "10px",
         }}
       >
-        <div className="titles">Quem seguir</div>
+        <div className="titles" style={{ marginBottom: "1rem"}}>Quem seguir</div>
         <div className="whoToFollow">
           <div className="menuItem">
-            <img alt="" className="whoToFollowIcons" src={defaultPfp} />
+            <div>
+              <div className="side-profile-pic">
+                <img alt="" src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687" />
+              </div>
+            </div>
             <p>Roque Marques</p>
           </div>
           <div className="menuItem">
-            <img alt="" className="whoToFollowIcons" src={defaultPfp} />
+            <div>
+              <div className="side-profile-pic">
+                <img alt="" style={{ width: "150%", marginLeft: "-25%"}} src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143" />
+              </div>
+            </div>
             <p>Arthur Brites</p>
           </div>
           <div className="menuItem">
-            <img alt="" className="whoToFollowIcons" src={defaultPfp} />
+            <div>
+              <div className="side-profile-pic">
+                <img alt="" src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880" />
+              </div>
+            </div>
             <p>Camargo Pastore</p>
           </div>
         </div>

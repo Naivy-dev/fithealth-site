@@ -2,6 +2,7 @@
   padding: 10px;
   text-align: left;
   border-radius: 10px;
+  cursor: pointer;
 }
 .suggestItem:hover {
   background-color: #ddf4f1;
