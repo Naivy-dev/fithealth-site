@@ -12,19 +12,32 @@
   border-top: none;
   border-bottom: none;
   padding: 10px;
-  height: 36px;
+  height: 40px;
   border-radius: 20px 0 0 20px;
   outline: none;
   color: #6f7574;
+  text-indent: 10px;
+  font-weight: 600;
 }
 
-.searchTerm:focus {
+.searchTerm::placeholder{
+  font-weight: bold;
+  color: #6f7574;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.searchTerm:focus{
   color: #1f1f1f;
+}
+
+.searchTerm:focus::placeholder {
+  opacity: 0;
 }
 
 .searchButton {
   width: 40px;
-  height: 36px;
+  height: 40px;
   border: 1px solid #d6e4e2;
   border-right: none;
   border-top: none;

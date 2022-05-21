@@ -3,7 +3,7 @@ import { Card, ListGroup, Modal } from "react-bootstrap";
 //#region Posts
 const postsInfos = [
   {
-    id: 1,
+    id: 0,
     title: "Como se alongar",
     imgSrc:
       "https://cdn.discordapp.com/attachments/927894260978696212/976663531166519306/alongamento.jpeg",
@@ -21,7 +21,7 @@ const postsInfos = [
     pfJob: "Professor de Yoga",
   },
   {
-    id: 2,
+    id: 1,
     title: "Benefícios da prática de exercícios",
     imgSrc:
       "https://cdn.discordapp.com/attachments/927894260978696212/976663531502067792/exfisico.jpeg",
@@ -37,7 +37,7 @@ const postsInfos = [
     pfJob: "Fisiculturista",
   },
   {
-    id: 3,
+    id: 2,
     title: "Saúde Mental: Como você cuida da sua?",
     imgSrc:
       "https://cdn.discordapp.com/attachments/927894260978696212/976649939998375996/unknown.png",
@@ -74,7 +74,7 @@ const postsInfos = [
     pfJob: "Psicólogo",
   },
   {
-    id: 4,
+    id: 3,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/976673383062306856/unknown.png?width=817&height=460",
     title: "Como podemos substituir o pão do café da manhã?",
@@ -99,7 +99,7 @@ const postsInfos = [
     pfJob: "Estudante de Nutricionismo",
   },
   {
-    id: 5,
+    id: 4,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977362261549121546/unknown.png?width=459&height=459",
     title: "Dicas para cuidar do seu cabelo!",
@@ -115,7 +115,7 @@ const postsInfos = [
     pfJob: "Tricologista",
   },
   {
-    id: 6,
+    id: 5,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977362229563392000/unknown.png?width=459&height=459",
     title: "Cuidados com a pele!",
@@ -134,7 +134,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Dermatologista",
   },
   {
-    id: 7,
+    id: 6,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977368621661716550/unknown.png?width=756&height=459",
     title: "Moçambique tem primeiro caso de poliomelite em 30 anos",
@@ -148,7 +148,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Jornalista",
   },
   {
-    id: 8,
+    id: 7,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977370355511476224/unknown.png?width=459&height=459",
     title: "Pratique exercícios sem sair de casa!",
@@ -174,7 +174,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Fisiculturista",
   },
   {
-    id: 9,
+    id: 8,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977370932798689410/unknown.png?width=459&height=459",
     title: "Como fazer meditação",
@@ -219,7 +219,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Professor de Yoga",
   },
   {
-    id: 10,
+    id: 9,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977372574503825418/unknown.png",
     title: "A Influência do consumo de sementes em nossa alimentação",
@@ -238,7 +238,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Estudante de Nutricionismo",
   },
   {
-    id: 11,
+    id: 10,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977375838280495124/unknown.png?width=691&height=459",
     title: "Como manter uma boa alimentação na infância",
@@ -259,7 +259,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Estudante de Nutricionismo",
   },
   {
-    id: 12,
+    id: 11,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977380531647938560/unknown.png",
     title: "Contole de Estresse",
@@ -286,7 +286,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     pfJob: "Psicólogo",
   },
   {
-    id: 13,
+    id: 12,
     imgSrc:
       "https://media.discordapp.net/attachments/927894260978696212/977379429963661373/unknown.png",
     title: "Diferença entre Transtorno Mental e Doença Mental",
@@ -353,8 +353,7 @@ export default function Post(props) {
         <div style={{ padding: "3rem", maxHeight: "100%", overflow: "hidden" }}>
           <div className="modal-profile">
             <div style={{ display: "flex", gap: "1rem" }}>
-              <div className="profile-pic">
-                <img src={postsInfos[curPost].pfp} alt="Profile"></img>
+              <div className="profile-pic" style={{ backgroundImage: "url(" + postsInfos[curPost].pfp + ")" }}>
               </div>
               <div className="profile-info">
                 <h2 className="profile-name">{postsInfos[curPost].pfName}</h2>
@@ -397,7 +396,7 @@ export default function Post(props) {
         .filter((post) => props.IdArray.includes(post.id))
         .map((post, id) => {
           return (
-            <div key={id}>
+            <div key={post.id}>
               <Card
                 style={{
                   width: "40rem",
@@ -411,7 +410,7 @@ export default function Post(props) {
                       id="contentImg"
                       variant="top"
                       src={post.imgSrc}
-                      onClick={() => handleShow(id)}
+                      onClick={() => handleShow(post.id)}
                     />
                   </div>
                 </div>
@@ -424,7 +423,7 @@ export default function Post(props) {
                   <div className="postCard--footer">
                     <button
                       className="more"
-                      onClick={() => handleShow(id)}
+                      onClick={() => handleShow(post.id)}
                       style={{ margin: 0, padding: 0 }}
                     >
                       Ler mais

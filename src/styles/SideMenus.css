@@ -12,18 +12,14 @@
   margin-bottom: 1rem;
   cursor: pointer;
 }
-.menuItem:hover {
-  transition: background-color 100ms;
-  background-color: #ddf4f1;
-}
 .menuItem p {
   text-align: left;
   margin: 0;
 }
-.postButton:hover {
+.postButton:hover,
+.sendButton:hover {
   transition: background-color color 100ms !important;
-  background-color: #c7fff6 !important;
-  color: #6f7574 !important;
+  background-color: #19c2a6 !important;
 }
 .titles {
   padding-left: 5px;
@@ -49,9 +45,6 @@
   padding-bottom: 5px;
   border-radius: 10px;
   cursor: pointer;
-}
-.rightMenuItem:hover {
-  background-color: #ddf4f1;
 }
 .rightMenuItems {
   color: black;
@@ -104,11 +97,6 @@
 }
 .contentText:placeholder-shown {
   font-weight: bold;
-}
-.sendButton:hover {
-  transition: background-color color 100ms !important;
-  background-color: #c7fff6 !important;
-  color: #6f7574 !important;
 }
 .writePostIcons {
   font-size: 50px;

@@ -86,7 +86,8 @@
   cursor: pointer;
 }
 
-.optionsText:hover{
+.optionsText.selected{
   background-color: #DDF4F1;
+  color: #000;
 }
 

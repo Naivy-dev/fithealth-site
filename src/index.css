@@ -27,3 +27,10 @@ code {
   background-color: #21debe !important;
 }
 
+
+.menuItem:hover,
+.rightMenuItem:hover, 
+.suggestItem:hover { 
+  transition: background-color 300ms;
+  background-color: #ddf4f1;
+}

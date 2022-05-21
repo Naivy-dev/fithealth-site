@@ -4,9 +4,6 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.suggestItem:hover {
-  background-color: #ddf4f1;
-}
 .suggestTitles {
   margin: 0;
   font-weight: bold;

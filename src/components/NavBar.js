@@ -34,7 +34,7 @@ export default function NavBar(props) {
             <img
               alt="Pesquisar"
               src={searchIcon}
-              style={{ height: "70%", paddingRight: 3 }}
+              style={{ height: "60%", paddingRight: 10 }}
             />
           </button>
         </div>

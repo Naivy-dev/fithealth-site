@@ -4,7 +4,7 @@ import Post from "./Post";
 export default function Suggested() {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <Post IdArray={[3]} />
+      <Post IdArray={[2]} />
       <Card style={{ padding: "2rem" }}>
         <div className="suggestItem">
           <p className="suggestTitles">Cuidados com o corpo</p>

@@ -24,7 +24,7 @@ export default function ProfileContainer() {
       </Card>
       <Card style={{ minWidth: "638px", padding: "1rem" }}>
         <div className="profileOptions">
-          <h2 className="optionsText">
+          <h2 className="optionsText selected">
             Posts
           </h2>
           <h2>
@@ -35,7 +35,7 @@ export default function ProfileContainer() {
           </h2>
         </div>
       </Card>
-      <Post IdArray={[4]}/>
+      <Post IdArray={[3,9,10]}/>
     </>
   );
 }
