@@ -104,6 +104,12 @@ export default function LeftSideMenu(props) {
         >
           Escrever
         </Button>
+        <div>
+          <p style={{ marginBottom: 0, marginTop: 10 }}>
+            Termos de serviço | Política de privacidade | Mais...
+          </p>
+          <p>@2022 FitHealth</p>
+        </div>
       </div>
     </>
   );
