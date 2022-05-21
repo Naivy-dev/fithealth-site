@@ -83,12 +83,12 @@
   height: 60px;
   border-radius:50%;
   overflow: hidden;
+  position: relative;
 }
 
 .profile-pic img{
   width: 100%;
-  margin-bottom: 50%;
-  margin-top: 0;
+  inset: 0;
 }
 
 .profile-name{
