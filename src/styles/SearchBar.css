@@ -24,7 +24,7 @@
   font-weight: bold;
   color: #6f7574;
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 150ms;
 }
 
 .searchTerm:focus{

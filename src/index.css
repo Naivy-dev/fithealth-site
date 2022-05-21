@@ -34,3 +34,12 @@ code {
   transition: background-color 300ms;
   background-color: #ddf4f1;
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

@@ -79,8 +79,10 @@
   margin: 0;
   width: 100%;
   height: 44px;
+  font-weight: bold;
 }
-.titleText:placeholder-shown {
+.titleText:placeholder-shown,
+.contentText:placeholder-shown  {
   font-weight: bold;
 }
 .contentText {
@@ -94,10 +96,20 @@
   width: 100%;
   margin-top: 24px;
   height: 341px;
-}
-.contentText:placeholder-shown {
   font-weight: bold;
 }
+.contentText:focus::-moz-placeholder,
+.titleText:focus::-moz-placeholder{
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+.contentText:focus::placeholder,
+.titleText:focus::placeholder{
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
 .writePostIcons {
   font-size: 50px;
   margin-top: 15px;
