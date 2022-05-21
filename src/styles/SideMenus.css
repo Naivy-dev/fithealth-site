@@ -6,9 +6,11 @@
   display: flex;
   width: 80%;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding: 5px;
   border-radius: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 .menuItem:hover {
   transition: background-color 100ms;
@@ -46,6 +48,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
+  cursor: pointer;
 }
 .rightMenuItem:hover {
   background-color: #ddf4f1;
@@ -116,4 +119,17 @@
   cursor: pointer;
   transition: opacity 100ms;
   opacity: 90%;
+}
+
+.side-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius:50%;
+  overflow: hidden;
+}
+
+.side-profile-pic img{
+  width: 100%;
+  margin-bottom: 50%;
+  margin-top: 0;
 }

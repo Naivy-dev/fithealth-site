@@ -41,11 +41,13 @@ export default function NavBar(props) {
       </div>
       <NavDropdown id="navbarScrollingDropdown" className="ms-auto">
         <NavDropdown.Item onClick={goToProfile}>Perfil</NavDropdown.Item>
-        <NavDropdown.Item>Configurações</NavDropdown.Item>
+        
         <NavDropdown.Divider />
         <NavDropdown.Item>Logout</NavDropdown.Item>
       </NavDropdown>
-      <Image src={profilePic} height="40px" width="40px" rounded="y"></Image>
+      <div className="side-profile-pic">
+        <img alt="" src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735" />
+      </div>
     </Navbar>
   );
 }

@@ -28,13 +28,16 @@
 .infoDivider > *:nth-child(2) {
   flex: 1.75 1 0;
 }
-#profileImg {
-  display: block;
+.pfp-container{
   max-height: 200px;
   max-width: 200px;
-  margin: auto;
   border-radius: 100%;
-  padding: 10px;
+  overflow: hidden;
+}
+
+#profileImg {
+  width: 100%;
+ 
 }
 .profileInfo {
   padding: 20px;
@@ -60,7 +63,7 @@
 }
 
 .profileDesc {
-  padding: 20px;
+  margin-top: 1rem;
   padding-top: 40px;
   text-align: justify;
   white-space: pre-line;
@@ -86,3 +89,4 @@
 .optionsText:hover{
   background-color: #DDF4F1;
 }
+
