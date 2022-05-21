@@ -96,7 +96,7 @@ const postsInfos = [
     `,
     pfName: "João Brites",
     pfp: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735",
-    pfJob: "Estudante de Nutricionismo",
+    pfJob: "Estudante de Nutrição",
   },
   {
     id: 4,
@@ -235,7 +235,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     `,
     pfName: "João Brites",
     pfp: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735",
-    pfJob: "Estudante de Nutricionismo",
+    pfJob: "Estudante de Nutrição",
   },
   {
     id: 10,
@@ -256,7 +256,7 @@ Hoje, elaboramos para vocês um passo a passo de como ter melhores cuidados com 
     `,
     pfName: "João Brites",
     pfp: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735",
-    pfJob: "Estudante de Nutricionismo",
+    pfJob: "Estudante de Nutrição",
   },
   {
     id: 11,
@@ -353,8 +353,12 @@ export default function Post(props) {
         <div style={{ padding: "3rem", maxHeight: "100%", overflow: "hidden" }}>
           <div className="modal-profile">
             <div style={{ display: "flex", gap: "1rem" }}>
-              <div className="profile-pic" style={{ backgroundImage: "url(" + postsInfos[curPost].pfp + ")" }}>
-              </div>
+              <div
+                className="profile-pic"
+                style={{
+                  backgroundImage: "url(" + postsInfos[curPost].pfp + ")",
+                }}
+              ></div>
               <div className="profile-info">
                 <h2 className="profile-name">{postsInfos[curPost].pfName}</h2>
                 <h3 className="profile-job">{postsInfos[curPost].pfJob}</h3>
